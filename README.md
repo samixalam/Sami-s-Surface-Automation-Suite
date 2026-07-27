@@ -1,4 +1,4 @@
-# Sami's Surface Automation Suite (v1.2)
+# Sami's Surface Automation Suite
 
 A professional-grade, multi-architecture diagnostic and deployment toolkit developed for Microsoft Surface inventory management.
 
@@ -16,7 +16,7 @@ I developed a **Smart Dispatcher Architecture** that identifies the system archi
 - **Secure Wipe:** Automates the destruction of test profiles and clearing of Event Logs/Recycle Bin before final Sysprep shutdown.
 - **SOP Documentation:** Includes a fully-responsive HTML technician guide.
 
-## 📁 Repository Structure
+## Repository Structure
 - `Run_Audit.bat` - The "Smart" entry point.
 - `Run_Return_To_Audit.bat` - Automates re-entry into the Administrator profile.
 - `Run_Camera_Cleanup.bat` - Professional user-data destruction.
@@ -25,8 +25,14 @@ I developed a **Smart Dispatcher Architecture** that identifies the system archi
 - `/Reports` - (Auto-generated) Device-specific audit logs.
 
 
-## 👨‍💻 Developer Note
-This suite was designed to solve real-world bottlenecks in a high-volume refurbishment environment. It demonstrates proficiency in **PowerShell**, **Windows CMD/Batch**, **WMI/CIM Architecture**, and **Technical Documentation**.
+## Tools & Acknowledgements
+This project was developed by **me**,  with technical assistance and logic-refinement from **Google AI Studio (Gemini)**. 
+
+By leveraging AI-assisted development, I was able to:
+- Rapidly prototype multi-architecture scripts.
+- Debug complex "Constrained Language Mode" errors specific to Windows RT 8.1.
+- Implement robust `Try/Catch` fallbacks for 12-year-old hardware namespaces.
+- Ensure professional-grade technical documentation.
 
 ---
 *Developed by Sami Alam | 2026*
