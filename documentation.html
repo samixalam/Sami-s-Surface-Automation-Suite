@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami's Surface Suite | SOP Documentation</title>
+    <style>
+        :root {
+            --primary-blue: #0078d4;
+            --dark-blue: #005a9e;
+            --light-bg: #f3f2f1;
+            --text-dark: #323130;
+            --text-light: #ffffff;
+            --border: #edebe9;
+            --accent-green: #107c10;
+            --accent-orange: #d83b01;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            margin: 0;
+            display: flex;
+            line-height: 1.6;
+        }
+
+        /* Sidebar Navigation */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        nav h1 {
+            font-size: 1.1rem;
+            border-bottom: 2px solid var(--primary-blue);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            color: var(--primary-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            color: #d1d1d1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-blue);
+            padding-left: 5px;
+        }
+
+        /* Main Content Area */
+        main {
+            margin-left: 280px;
+            padding: 40px;
+            width: 100%;
+            max-width: 950px;
+        }
+
+        header {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        header h2 {
+            margin: 0;
+            color: var(--primary-blue);
+        }
+
+        section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            scroll-margin-top: 20px;
+        }
+
+        h3 {
+            color: var(--primary-blue);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .step-box {
+            border-left: 4px solid var(--primary-blue);
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .code-inline {
+            background: #eee;
+            padding: 2px 5px;
+            font-family: 'Courier New', Courier, monospace;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .smart-logic {
+            border-left: 4px solid var(--accent-green);
+            background: #f1fcf1;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .warning {
+            border-left: 4px solid var(--accent-orange);
+            background: #fff4ce;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        table th {
+            background-color: #f8f8f8;
+        }
+
+        .status-badge {
+            background: var(--accent-green);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #605e5c;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Sami's Toolkit</h1>
+        <ul>
+            <li><a href="#intro">Project Overview</a></li>
+            <li><a href="#audit">1. Smart Audit Dispatcher</a></li>
+            <li><a href="#camera">2. Camera User Loop</a></li>
+            <li><a href="#cleanup">3. Data Wipe & Ship</a></li>
+            <li><a href="#trouble">Technical Support</a></li>
+            <li><a href="#reference">Command Reference</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h2>Sami's Surface Automation Suite</h2>
+            <p>A unified diagnostic and preparation toolkit for Microsoft Surface inventory.</p>
+            <span class="status-badge">Revision 1.2 | Developed by Sami</span>
+        </header>
+
+        <!-- OVERVIEW -->
+        <section id="intro">
+            <h3>Project Overview</h3>
+            <p>This automation suite was designed by <strong>Sami</strong> to standardize the processing of diverse Surface models. By utilizing a <strong>Smart Dispatcher Architecture</strong>, the toolkit identifies the device's age and security restrictions to execute the correct diagnostic environment.</p>
+            
+            <div class="smart-logic">
+                <strong>Sami's Smart Logic (V1.2):</strong><br>
+                • <strong>Legacy Path:</strong> Optimized for Surface RT (1516). Bypasses "Constrained Language Mode".<br>
+                • <strong>Modern Path:</strong> Optimized for Pro/Laptop/Go. Uses high-speed CIM Instances.
+            </div>
+        </section>
+
+        <!-- AUDIT PHASE -->
+        <section id="audit">
+            <h3>1. The Smart Audit Phase</h3>
+            <p>Automatically captures Serial Numbers, Specs, and calculates Battery Health Percentage without manual math.</p>
+            
+            <div class="step-box">
+                <strong>Step 1:</strong> Enter Audit Mode using <span class="code-inline">Ctrl + Shift + F3</span>.<br>
+                <strong>Step 2:</strong> Connect the USB and launch <span class="code-inline">Run_Audit.bat</span>.<br>
+                <strong>Step 3:</strong> Review the automated folder created in the <code>/Reports</code> directory.
+            </div>
+
+            <p><strong>Note:</strong> All data is stored in a dedicated folder named <code>[Model]_[Serial]</code> to prevent inventory mix-ups.</p>
+        </section>
+
+        <!-- CAMERA LOOP -->
+        <section id="camera">
+            <h3>2. The Camera User Loop</h3>
+            <p>Automates the transition between system modes to verify hardware functionality.</p>
+
+            <div class="step-box">
+                <strong>Step 1:</strong> Run <span class="code-inline">Scripts/Camera_Prep.bat</span> to reboot into OOBE.<br>
+                <strong>Step 2:</strong> Create local account <code>CameraTest</code> and verify front/rear sensors.<br>
+                <strong>Step 3:</strong> Reboot and return to Audit Mode using <span class="code-inline">Ctrl + Shift + F3</span> at the sign-in screen.
+            </div>
+        </section>
+
+        <!-- UNIVERSAL CLEANUP -->
+        <section id="cleanup">
+            <h3>3. Data Wipe & Resale Shipment</h3>
+            <p>Ensures 100% data destruction and prepares the device for the end-buyer.</p>
+
+            <div class="step-box">
+                <strong>Step 1:</strong> Run <span class="code-inline">Run_Camera_Cleanup.bat</span>. This nukes the test profile and images.<br>
+                <strong>Step 2:</strong> Run <span class="code-inline">Run_Final_Ship.bat</span>. This clears event logs and triggers the final Sysprep shutdown.
+            </div>
+
+            <div class="warning">
+                <strong>Compliance:</strong> Do not hand off a device unless it has been shut down via <strong>Sami's Final Ship</strong> tool. This ensures the customer receives a "New Device" setup experience.
+            </div>
+        </section>
+
+        <!-- TROUBLESHOOTING -->
+        <section id="trouble">
+            <h3>Technical Support & Troubleshooting</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Observation</th>
+                        <th>Resolution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>"Constrained Language" Error</td>
+                        <td>The dispatcher (Run_Audit) automatically handles this by calling the Legacy script.</td>
+                    </tr>
+                    <tr>
+                        <td>Battery "Check HTML"</td>
+                        <td>Common on RT 1516 models. Refer to the Battery_Report.html in the device folder.</td>
+                    </tr>
+                    <tr>
+                        <td>Sysprep Failure</td>
+                        <td>Ensure no Windows Updates are pending. Restart once and retry the script.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- REFERENCE -->
+        <section id="reference">
+            <h3>Sami's Command Reference</h3>
+            <p>Core logic utilized by the toolkit for technical documentation:</p>
+            <ul>
+                <li><strong>Architecture Scout:</strong> <code>ver</code> (Batch version detection)</li>
+                <li><strong>Legacy Battery:</strong> <code>root/wmi/BatteryFullChargedCapacity</code></li>
+                <li><strong>Modern Driver Scan:</strong> <code>Get-PnpDevice</code></li>
+                <li><strong>OOBE Finalization:</strong> <code>sysprep.exe /oobe /shutdown</code></li>
+            </ul>
+        </section>
+
+        <footer>
+            Sami's Surface Automation Suite | © 2024 | Work Experience Project
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
